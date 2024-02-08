@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    a:link {color: black}
+    a:visited {color: lightgreen}
+    a:hover {color: white}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>Green Hydrogen</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+    <div class = "Rand"></div>
+
+    <div class = "Überschrift"><h1><u>Elektrolyse Simulation</u></h1></div><br>
+
+    <div class = "Navigation">
+        <div class = "Abtrennung">
+            <canvas id="smt" width="535" height="100"></canvas>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class = "Nav" href="#Introduction">Introduction</a></li>
+                    <li><a class = "Nav" href="#UsefulLinks">UsefulLinks</a></li>
+                    <li><a class = "Nav" href="#ChemicalLogic">ChemicalLogic</a></li>
+                    <li><a class = "Nav" href="#ChemicalReaction">ChemicalReaction</a></li>
+                </ul>
+                
+            </nav>
+        
+    </div><br><br>
+
+    <div class = "About">
+        <div id = "Introduction">
+            <section>
+                <h3><u>What is this about?</u></h3>
+                <p>On this website, we shall program a simulation that creates green hydrogen with generated numbers.</p>
+                <p><i>Disclaimer; we calculate with the most ideal numbers, which are generated with a certain logic, but can't be executed like we do.</i></p>
+            
+            </section>
+        </div>
+        <div id = "UsefulLinks">
+            <section>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs"> This is totally not a suspicious link!</a>
+            </section>
+        </div>
+    </div><br><br>
+
+    <div class = "Chemical">
+        <div id = "ChemicalLogic">
+            <section>
+                <h3><u>Elements</u></h3>
+                <ul>
+                    <li>Water - <i>if possible a version of "green water"</i></li>
+                    <li>"green" Energy - <i>for our simulation, we use off-shore generated electricity</i></li>
+                </ul>
+        
+            </section>
+        </div>
+        
+        
+        <div class = "ChemicalReaction">
+            <label for="Reaction">
+                <textarea name="Reaction" id="Reaction" cols="40" rows="2" placeholder="The result will be displayed here."></textarea>
+            </label><br>
+            <button onclick = "ReactionButton()">Show Reaction</button>
+            <button onclick = "ReactionReset()">RESET</button>
+        </div>
+
+
+    </div><br><br>
+    
+   <div class = "chartChart">
+        <div id = "Chart">
+            <div class="container">
+                <div class="chart">
+                    <canvas id="barchart" width="300" height="300"></canvas>
+                </div>
+                <div class = "linechart">
+                    <canvas id = "linechart" width = "300" height = "300"></canvas>
+                </div>
+            </div>
+             <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+             <script src = "chart.js"></script>
+        </div>
+    </div>
+    
+</body>
+
+</html>
